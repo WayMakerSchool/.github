@@ -1,0 +1,54 @@
+name: "🐞 버그 제보"
+description: 발견한 버그를 알려주세요.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 🐞 어떤 문제인가요?
+      placeholder: 예) 공백만 입력해도 할 일이 추가돼요.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 🔁 재현 방법
+      description: 다른 사람이 똑같이 따라 할 수 있게 순서대로 적어주세요.
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 🤔 예상했던 동작
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: 📸 스크린샷 / 에러 메시지 (선택)
+      description: 이미지는 여기에 끌어다 놓으면 올라가요.
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: 🚨 심각도
+      options:
+        - 낮음 (불편하지만 쓸 수는 있어요)
+        - 보통 (일부 기능이 안 돼요)
+        - 높음 (앱이 멈추거나 쓸 수 없어요)
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: 💻 환경 (선택)
+      placeholder: 예) macOS, Chrome / iPhone 15, iOS 26
