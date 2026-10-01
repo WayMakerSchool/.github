@@ -1,0 +1,17 @@
+name: "❓ 질문"
+description: 궁금한 점을 팀원이나 선생님에게 물어봐요.
+title: "[Question] "
+labels: ["question"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: ❓ 질문 내용
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: 🔍 시도해 본 것 (선택)
+      description: 찾아본 자료나 직접 해 본 방법을 적어주면 답하기 쉬워요.
