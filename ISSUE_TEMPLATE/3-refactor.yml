@@ -1,0 +1,29 @@
+name: "🔧 리팩토링"
+description: 기능은 그대로 두고 코드를 더 좋게 정리해요.
+title: "[Refactor] "
+labels: ["refactor"]
+body:
+  - type: textarea
+    id: target
+    attributes:
+      label: 🎯 대상
+      description: 어떤 파일이나 코드를 정리하나요?
+      placeholder: 예) script.js의 render() 함수
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: 🤔 이유
+      description: 지금 코드의 어떤 점이 아쉬운가요?
+    validations:
+      required: true
+
+  - type: textarea
+    id: todo
+    attributes:
+      label: ✅ 할 일
+      value: |
+        - [ ]
+        - [ ]
