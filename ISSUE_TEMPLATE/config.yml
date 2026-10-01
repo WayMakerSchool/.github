@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📚 예시 프로젝트 보러 가기
+    url: https://github.com/WayMakerSchool/2026-example-WayMakers
+    about: 이슈, 브랜치, PR을 어떻게 쓰는지 예시 저장소에서 확인해 보세요.
