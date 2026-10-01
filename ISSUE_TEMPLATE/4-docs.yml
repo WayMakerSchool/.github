@@ -1,0 +1,19 @@
+name: "📝 문서"
+description: README 등 문서를 작성하거나 고쳐요.
+title: "[Docs] "
+labels: ["documentation"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: 📝 무엇을 작성하거나 고치나요?
+      placeholder: 예) README에 실행 방법 추가
+    validations:
+      required: true
+
+  - type: textarea
+    id: todo
+    attributes:
+      label: ✅ 할 일
+      value: |
+        - [ ]
